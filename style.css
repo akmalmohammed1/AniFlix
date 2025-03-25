@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-red: #e50914;
+    --dark-red: #b81d24;
+    --background-dark: #111;
+    --text-light: #fff;
+    --text-gray: #aaa;
+    --overlay-dark: rgba(0, 0, 0, 0.4);
+}
+
+body {
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-light);
+}
+
+nav {
+    z-index: 10;
+    width: 75vw;
+    margin: auto;
+}
+
+
+.main {
+    background-image: url("Assets/img/background1.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+
+.main .box {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: var(--overlay-dark);
+}
+
+
+.first{
+    
+    background-color: rgb(0, 0, 0);
+    font-family: poppins,sans-serif;
+}
+
+video {
+
+    width: 75%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.hero {
+    height: 70vh;
+    font-family: 'Bebas Neue', sans-serif;
+    gap: 10px;
+    padding: 25px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 78px;
+    font-weight: 900;
+}
+
+.hero p {
+    font-size: 30px;
+}
+
+.hero button {
+    font-size: 30px;
+    background-color: var(--primary-red);
+    border: none;
+    transition: all 0.3s;
+
+}
+
+.line {
+    height: 7px;
+    background-color:  #e50914;
+    width: 100%;
+}
+ .btn{
+    background-color: var(--primary-red);
+    color: var(--text-light);
+}
+
+@media (max-width: 767.98px) {
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .hero button {
+        font-size: 20px;
+    }
+
+    .hero {
+        padding: 15px;
+    }
+
+    .red-line {
+        position: relative;
+        margin-top: 0px;
+    }
+    
+}
+.col-md-4 .card {
+    position: relative;
+    z-index: 1;
+}
+
+/* Adjust spacing on mobile */
+@media (max-width: 767.98px) {
+    .col-md-4 {
+        padding-top: 30px;
+    }
+}
+
+
+    .box1{
+        background-color: #b81d24;
+        width: 20vw;
+        height: 20vh;
+        position: absolute; 
+        top: 20vh;
+        float: right;
+        right: -13vh;
+        z-index: 1;  
+        
+    }
+
+/* Footer */
+footer {
+    background-color: var(--background-dark);
+    padding: 50px 0 20px;
+}
+
+.footer-links h5 {
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 20px;
+    color: var(--primary-red);
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: var(--text-gray);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--text-light);
+}
+
+.copyright {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+/* Genre Modal Styles */
+#genreModal .modal-content {
+    border: 2px solid #6b0707;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: var(--background-dark);
+  }
+  
+  #genreModal .genre-card {
+    transition: all 0.3s ease;
+  }
+  
+  #genreModal .genre-card:hover {
+    transform: scale(1.02);
+  }
+  
+  #genreModal .anime-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+  }
+  
+  #genreModal .anime-card img {
+    transition: transform 0.3s ease;
+    height: 40vh;
+  }
+  
+  #genreModal .anime-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  #genreModal .watch-btn {
+    transition: all 0.3s ease;
+    opacity: 0;
+  }
+  
+  #genreModal .anime-card:hover .watch-btn {
+    opacity: 1;
+  }
+  
+  #genreModal .border-danger { border-color: #e63946 !important; }
+  #genreModal .border-primary { border-color: #3a86ff !important; }
+  #genreModal .border-warning { border-color: #ffbe0b !important; }
+  #genreModal .border-success { border-color: #06d6a0 !important; }
+  
+  #genreModal .text-danger { color: #e63946 !important; }
+  #genreModal .text-primary { color: #3a86ff !important; }
+  #genreModal .text-warning { color: #ffbe0b !important; }
+  #genreModal .text-success { color: #06d6a0 !important; }
+.back-to-top {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+    transform: scale(1.1) translateY(-5px);
+}
+
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.modal-content {
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+
+.modal.show .modal-content {
+    transform: scale(1);
+}
+.card-title{
+    color: white;
+}

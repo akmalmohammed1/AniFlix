@@ -33,7 +33,7 @@ ANIFLIX is a responsive anime streaming website that allows users to watch unlim
 
 ## Installation
 
-No installation required - this is a frontend-only project. Simply open `responsive.html` in any modern web browser.
+No installation required - this is a frontend-only project. Simply open `index.html` in any modern web browser.
 
 ## Project Structure
 
@@ -49,7 +49,7 @@ ANIFLIX/
 
 ## How to Use
 
-1. Open `responsive.html` in your browser
+1. Open `index.html` in your browser
 2. Browse anime by clicking "WATCH ANIME" button
 3. Explore different genres in the modal
 4. View user testimonials in the carousel
